@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv ="X-UA-Compartable" content="IE=edge">
+        <meta name ="viewpoint" content ="width=device-width, initial-scale=1.0">
+        <title>My Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3f5913e36a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="image/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm Mr. <span>Sanna Bah</span> <br>from The Gambia</h1>
+                </div>
+            </div>
+        </div>
+        <!-------------------About section------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-column1">
+                        <img src="image/GHTSanna.jpg">
+                    </div>
+                    <div class="about-column2">
+                        <h1 class="sub-tittle">About Me</h1>
+                        <p>Hello, I'm Sanna Bah, an experienced air traffic controller with the Gambia Civil Aviation Authority and a passionate front-end developer. With a background in ensuring safe and efficient air travel, I bring a meticulous approach and attention to detail to my work as a software engineer.
+
+                            Combining my technical expertise and creativity, I specialize in front-end development, crafting user-friendly and visually appealing websites. I have a solid understanding of HTML, CSS, and JavaScript, and I continuously strive to stay up-to-date with the latest industry trends and best practices.Throughout my career, I have successfully managed complex air traffic operations while simultaneously honing my programming skills. This unique blend of disciplines allows me to approach challenges from different perspectives and deliver innovative solutions.
+
+                            I am dedicated to producing high-quality, responsive web experiences that not only meet client requirements but also exceed user expectations. Collaborating with teams and adapting to evolving technologies are skills I have honed in my roles as both an air traffic controller and a software engineer. </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-end</span><br>Building Responsive Website</li>
+                                    <li><span>Full Stack Developer</span><br>Work on Both Front-end and Back-end</li>
+                                    <li><span>Software Engineer</span><br>Design, Develop, Maintain, Test, and Evaluate Computer Software</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2013 - Current</span><br>Approach/Aerodrome Controller<br>10+ years.</li>
+                                    <li><span>2020 - Current</span><br>Software Developer<br>4+ years</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022 - Current</span><br>Pursing BSc Computer Science at University of The Gambia</li>
+                                    <li><span>2023</span><br>Software Engineer/Full Stack Developer from ALX</li>
+                                    <li><span>2021</span><br>Licence Air Traffic Controller from Gambia Civil Aviation Authority (GCAA)</li>
+                                    <li><span>2017</span><br>Certified Air Traffic Controller from Ghana Civil Aviation Training Academy (GATA)</li>
+                                </ul>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------------Services---------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-end Developer</h2>
+                        <p>A front-end developer is a software engineer who specializes in designing and building the user interface (UI) and user experience (UX) of websites and applications.</p>
+                        <a href="https://roadmap.sh/frontend">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Full Stack Developer</h2>
+                        <p>A full stack developer is a versatile software engineer who possesses expertise in both front-end and back-end development. They have the skills to work on all layers of a web or application stack, including the user interface, server-side logic, and database.</p>
+                        <a href="https://roadmap.sh/full-stack">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headphones"></i>
+                        <h2>Air Traffic Controller</h2>
+                        <p>An air traffic controller is a professional responsible for managing and coordinating the movement of aircraft in and around airports and in the airspace. Their primary role is to ensure safe and efficient air traffic flow, minimizing the risk of collisions and maintaining smooth operations.</p>
+                        <a href="https://www.ifatca.org/">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------Portfolio------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/console.jpg">
+                        <div class="layer">
+                            <h3>ALX Projects</h3>
+                            <p>The ALX Foundation Program is designed to provide learners with a comprehensive understanding of the fundamentals of software development</p>
+                            <a href="image/ALXTranscript.pdf"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/console11.jpg">
+                        <div class="layer">
+                            <h3>Short Specialization</h3>
+                            <p>ALX offers Short Specialization programs that allow learners to delve deeper into specific areas of interest.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/tower1.jpg">
+                        <div class="layer">
+                            <h3>Control Tower</h3>
+                            <p>An Air Traffic Controller | The GAMATCA Team</p>
+                            <a href="https://www.facebook.com/gamatca"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.alxafrica.com/software-engineering/" class="btn">See More</a>
+            </div>
+        </div>
+        <!----------------------Contact Form------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>gs8004rtj5jj5j@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+220 2027656</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/bairoking/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@sannabah2535/videos"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/in/sanna-bah-04472a23b/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/bairoking/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="image/Resume Sanna Bah.pdf" download class="btn btn2">Download Cv</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg">Message sent successfully</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright <i class="fa-solid fa-copyright"></i> Bairoking Portfolio. Made with <i class="fa-solid fa-heart"></i> by Mr. Sanna Bah</p>
+            </div>
+        </div>
+
+
+
+        <!-----------------Javascript for a large screen-------------->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <!-------------Javascript for a small screen----------------->
+        <script>
+
+            var sidemenu = document.getElementById("sidemanu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <!------------------Javascript for the summit button---------->
+        <script>
+            const msq = document.getElementById("msq")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                  })
+                  .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+</html>
